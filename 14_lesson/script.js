@@ -1,3 +1,4 @@
 'use strict';
 
-const num = 50;
+let num = 50;
+
