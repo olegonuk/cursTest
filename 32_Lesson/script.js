@@ -17,4 +17,5 @@ for (let node of document.body.childNodes) {
       continue
    }
    console.log(node);
+
 }
