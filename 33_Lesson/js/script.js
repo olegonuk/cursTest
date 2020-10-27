@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (newFilm) {
 
-         if (newFilm.length > 21) {
-            newFilm = `${newFilm.substring(0, 22)}...`;
+         if (newFilm.length > 15) {
+            newFilm = `${newFilm.substring(0, 16)}...`;
             console.log(newFilm);
          }
 
