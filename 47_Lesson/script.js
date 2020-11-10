@@ -1,32 +1,37 @@
 'use strict'
 
 class Rectangle {
-   constructor(height, widht) {
-      this.height = height;
-      this.widht = widht;
+   constructor(heigth, width) {
+      this.heigth = heigth;
+      this.width = width;
    }
 
    calcArea() {
-      return this.height * this.widht;
+      return this.heigth * this.width;
    }
-
 }
 
 class ColoredRectangleWithText extends Rectangle {
-   constructor(height, widht, text, bgColor) {
-      super(height, widht);
+   constructor(heigth, width, text, bgColor) {
+      super(heigth, width);
       this.text = text;
       this.bgColor = bgColor;
    }
 
-   showMyProps() {
-      console.log(`Текст: ${this.text}, Цвет: ${this.bgColor}`);
+   shoMyprops() {
+      console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
    }
 }
 
-const squer = new Rectangle(30, 50);
-console.log(squer.calcArea());
-
-const div = new ColoredRectangleWithText(10, 30, 'hello World', 'green');
-div.showMyProps();
+const div = new ColoredRectangleWithText(25, 10, 'Hello World', 'red');
+div.shoMyprops();
 console.log(div.calcArea());
+
+
+// const square = new Rectangle(10, 10);
+// const long = new Rectangle(50, 40);
+// console.log(square);
+// console.log(square.calcArea());
+// console.log(long);
+// console.log(long.calcArea());
+
